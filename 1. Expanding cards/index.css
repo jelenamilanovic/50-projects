@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  height: 90vh;
+  width: 90vw;
+  margin: 5vh auto;
+  overflow: hidden;
+  font-family: "Mulish", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card {
+  background-image: url('./images/1.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  height: 80vh;
+  width: 7%;
+  border-radius: 3em;
+  transition: width .8s ease-in;
+  cursor: pointer;
+}
+
+.card:nth-child(2) {
+  background-image: url('./images/2.jpg');
+}
+
+.card:nth-child(3) {
+  background-image: url('./images/3.jpg');
+}
+
+.card:nth-child(4) {
+  background-image: url('./images/4.jpg');
+}
+
+.card:nth-child(5) {
+  background-image: url('./images/5.jpg');
+}
+
+.card.active {
+  width: 68%;
+}
+
+.card h3 {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  color: #ffffff;
+  opacity: 0;
+  font-size: 24px;
+}
+
+.card.active h3 {
+  opacity: 1;
+  transition: opacity .8s;
+}
