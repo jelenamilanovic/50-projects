@@ -11,7 +11,6 @@ function initCards() {
 }
 
 function setActiveCard(i) {
-  console.log('card is active', i)
   cards[currentActiveIndex].classList.remove('active');
   cards[i].classList.add('active');
   currentActiveIndex = i;
