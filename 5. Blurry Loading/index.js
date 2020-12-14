@@ -1,7 +1,5 @@
-let wrapperEl, statusEl;
-
 window.onload = () => {
-  statusEl = document.querySelector(".loading-status");
+  let statusEl = document.querySelector(".loading-status");
   let progress = 1;
   let progressOpacity = 1;
   let filterAmount = 100;
