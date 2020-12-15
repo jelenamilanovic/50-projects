@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+}
+
+.part {
+  background-size: cover;
+  background-position: left;
+  transition: flex 1s ease-in-out;
+  flex: 1 1 25%;
+  position: relative;
+}
+
+.left {
+  background-image: url("1.jpg");
+}
+
+.right {
+  background-image: url("2.jpg");
+}
+
+.part.wider {
+  flex: 1 1 75%;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.left .overlay {
+  background: rgba(87, 84, 236, 0.7);
+}
+
+.right .overlay {
+  background: rgba(43, 43, 43, .8);
+}
+
+.overlay h1 {
+  font-size: 4rem;
+  margin: 15rem 0 5rem;
+}
+
+.overlay .btn {
+  outline: none;
+  border: 3px solid white;
+  background-color: transparent;
+  width: 15rem;
+  padding: 1.5rem;
+  cursor: pointer;
+}
+
+.overlay a {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.left .btn:hover {
+  background-color: rgba(87, 84, 236, 1);
+  border-color: rgba(87, 84, 236, 1);
+}
+
+.right .btn:hover {
+  background-color: rgb(28 122 28);
+  border-color: rgb(28 122 28);
+}
