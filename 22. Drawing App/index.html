@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> 22. Drawing App </title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <canvas width="800px" height="600px"></canvas>
+
+    <div class="toolbar">
+      <div class="left">
+        <div class="ctrl" onclick="decrementSize()">
+          -
+        </div>
+        <div class="ctrl" id="size">
+          10
+        </div>
+        <div class="ctrl" onclick="incrementSize()">
+          +
+        </div>
+        <input type="color" class="ctrl" id="color" onchange="changeColor()">
+      </div>
+
+      <div class="ctrl right" onclick="clearCanvas()">
+        X
+      </div>
+    </div>
+
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>

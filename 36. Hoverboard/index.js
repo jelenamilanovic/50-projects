@@ -37,4 +37,3 @@ function getRandomColor() {
 }
 
 generateGrid(500);
-setInterval(changeColor, 50)
