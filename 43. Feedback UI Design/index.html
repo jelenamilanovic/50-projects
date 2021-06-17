@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> 43. Feedback UI design </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <div class="card">
+    <strong>How satisfied are you with our customer support performance?</strong>
+
+    <div class="ratings">
+      <div class="rating" data-rating="Unhappy">
+        <img src="https://image.flaticon.com/icons/svg/187/187150.svg" alt="Unhappy">
+        <span>Unhappy</span>
+      </div>
+
+      <div class="rating" data-rating="Neutral">
+        <img src="https://image.flaticon.com/icons/svg/187/187136.svg" alt="Neutral">
+        <span>Neutral</span>
+      </div>
+
+      <div class="rating selected" data-rating="Satisfied">
+        <img src="https://image.flaticon.com/icons/svg/187/187133.svg" alt="Satisfied">
+        <span>Satisfied</span>
+      </div>
+    </div>
+
+    <button class="btn" id="submit-btn">Send Review</button>
+  </div>
+
+  <div class="card invisible">
+    <i class="fas fa-heart fa-2x"></i>
+    <strong>Thank you!</strong>
+    <br>
+    <strong id="feedback">Feedback: Satisified</strong>
+    <p>We'll use your feedback to improve our customer support</p>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
