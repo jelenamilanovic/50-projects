@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:300,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fbfcfe;
+  font-family: 'Muli', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.wrapper {
+  max-width: 1000px;
+  border: 2px solid black;
+  border-radius: 10px;
+  text-align: center;
+  padding: 30px;
+}
+
+p,
+h2 {
+  margin: revert;
+}
+
+small {
+  background-color: #eaeaea;
+  display: inline-block;
+  padding: 10px;
+  line-height: 20px;
+  max-width: 400px;
+  color: #777;
+  border-radius: 5px;
+}
+
+.digits-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+  outline: none;
+}
+
+.digit {
+  width: 100px;
+  height: 120px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  font-size: 75px;
+  font-weight: 300;
+  margin: 12px 10px;
+  text-align: center;
+}
+
+.digit:valid {
+  border-color: #3498db;
+  box-shadow: 0 10px 10px -5px rgb(0 0 0 / 25%);
+}
+
+.digit::-webkit-outer-spin-button,
+.digit::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.digit {
+  -moz-appearance: textfield;
+}
+
+@media (max-width: 750px) {
+  .digits-wrapper {
+    flex-wrap: wrap;
+  }
+
+  .digit {
+    font-size: 60px;
+    height: 80px;
+    max-width: 70px;
+  }
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> 41. Verify Account UI </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <h2>Verify Your Account</h2>
+    
+    <p>
+      We emailed you the six digit code to cool_guy@email.com. 
+      <br>Enter the code below to confirm your email address.
+    </p>
+    
+    <div class="digits-wrapper">
+      <input type="number" class="digit" min="0" max="9" placeholder="0" required>
+      <input type="number" class="digit" min="0" max="9" placeholder="0" required>
+      <input type="number" class="digit" min="0" max="9" placeholder="0" required>
+      <input type="number" class="digit" min="0" max="9" placeholder="0" required>
+      <input type="number" class="digit" min="0" max="9" placeholder="0" required>
+      <input type="number" class="digit" min="0" max="9" placeholder="0" required>
+    </div>
+    
+    <small>This is design only. We didn't actually send you an email as we don't have your email, right?</small>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
